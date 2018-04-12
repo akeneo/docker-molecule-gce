@@ -1,0 +1,9 @@
+language: bash
+services: docker
+
+env:
+  - IMAGE_TAG=2.12
+
+script:
+  - ./.ci/build_images.sh
+  - ./.ci/run_tests.sh
